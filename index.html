@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Karisma</title>
+    
+    <!--CSS External file-->
+    <link rel="stylesheet" href="css\style.css">
+    
+    
+    <!--Tailwind CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    </head>
+
+    <body>
+    <!-- Header content -->
+    <header class="main-header p-[8px]">
+
+        <!--Lofo website-->
+        <div class="main-logo"></div>
+
+        <!-- Navigasi menu -->
+        <nav class="flex gap-1">
+            <a class="border rounded p-2" href="#home-section">Home</a>
+            <a class="border rounded p-2" href="#profile-section">Our Profile</a>
+            <a class="border rounded p-2" href="#portfolio-section">Portofolio</a>
+            <a class="border rounded p-2" href="#message-section">Message Us</a>
+        </nav>
+    </header>
+
+    <hr/>
+
+    <!--Menu utama-->
+    <main>
+    <!-- Home -->
+        <section id="home-section" class="hero-section p-4 min-h-[500px]">
+            <h1 class="text-3xl font-bold mb-4">
+            <span id="greet-name"></span>Welcome to My Portfolio,
+            </h1>
+            <p class="text-lg">
+            This is a brief introduction about myself and my work.
+            </p>
+        </section>
+
+
+        <hr />
+
+        <!-- Our profile -->
+        <section id="profile-section" class="profile-section p-4 min-h-[500px]">
+            <h2 class="text-2xl font-bold mb-4">Our Profile</h2>
+            <p class="text-lg">My name is Karisma Nugroho, an Informatics Engineering student at Universitas Pamulang with a strong passion for technology, web development, and network systems. I enjoy building creative and efficient digital solutions while continuously improving my technical and interpersonal skills. My academic journey has strengthened my foundation in both software and hardware aspects of IT, preparing me to contribute effectively in professional environments.</p>
+            <br>
+            <p class="text-lg">Skills:
+                Programming & Web Development
+                Proficient in JavaScript, HTML, CSS, and PHP for creating interactive and responsive web applications.
+                Networking
+                Skilled in network configuration and designing network topologies for reliable communication and connectivity.</p>
+        </section>
+
+        <hr />
+
+        <!-- Portfolio -->
+        <section id="portfolio-section" class="portfolio-section p-4 min-h-[500px]">
+            <h2 class="text-2xl font-bold mb-4">Portofolio</h2>
+            <p class="text-lg">Foto ini dijepret langsung oleh Karisma Nugroho</p>
+
+        <!-- Grid container -->
+        <div class="grid">
+        
+            <!--Foto 1-->
+            <div class="card">
+            <img src="https://image2url.com/images/1761329610343-984b1312-a9d8-45ef-b790-6150f328ac9e.jpeg" alt="Project 1" class="portfolio-img">
+            <h3>MT Cikuray</h3>
+            <p>Pemandangan dari pos 1 gunung cikuray</p>
+            </div>
+
+            <!--Foto 2-->
+            <div class="card">
+            <img src="https://image2url.com/images/1761329665146-ba6e0642-b053-4abd-9b49-f18457b75eaa.jpeg" alt="Project 2" class="portfolio-img">
+            <h3>MT Cikuray</h3>
+            <p>Pemandangan dari pos 3 gunung cikuray</p>
+            </div>
+
+            <!--Foto3-->
+            <div class="card">
+            <img src="https://image2url.com/images/1761329703937-ef5f62ca-7a2e-4bd9-9c8a-ac1550d25849.jpeg" alt="Project 3" class="portfolio-img">
+            <h3>Pantai Ujung Genteng</h3>
+            <p>Ombak di pantai ujung genteng Sukabumi</p>
+            </div>
+        </div>
+        </section>
+
+        <hr />
+
+        <!-- Message Us -->
+        <section id="message-section" class="message-section p-4 min-h-[500px]">
+            <h2 class="text-2xl font-bold mb-4">Message Us</h2>
+            <p class="text-lg"></p>
+
+            <form>
+                <label for="name" class="block mb-2">Name:</label>
+                <input type="text" id="name-input" name="name" class="border p-2 mb-4 w-full" required>
+
+                <label for="email" class="block mb-2">Email:</label>
+                <input type="email" id="email-input" name="email" class="border p-2 mb-4 w-full" required>
+
+                <label for="message" class="block mb-2">Message:</label>
+                <textarea id="message-input" name="message" class="border p-2 mb-4 w-full" rows="4" required></textarea>
+            </form>
+
+            <button onclick="validateForm();" class="bg-blue-500 text-white p-2 rounded">Send Message</button>
+        </section>
+    </main>
+
+     <!-- Footer content -->
+    <footer>
+        <div class="footer-content p-4 text-center">
+            <p class="text-sm">&copy; Karisma@2025. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--Java script-->
+    <script src="js\script.js"></script>
+
+    </body>
+</body>
+</html>
